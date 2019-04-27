@@ -190,7 +190,7 @@ export default class CustomColorPicker extends Component {
                 <TextInput value={this.state.color} style={[styles.textInput, Dimensions.get('window').width < 400 && {width: 130}]} onEndEditing={this.onEndEditing} onChangeText={(t) => this.onUpdate(t)}/>
                 <TouchableOpacity onPress={this.openModal}>
                     <View style={styles.pickerButton}>
-                        <Image source={require("./colorpicker.png")} style={styles.colorPickerImage} resizeMode="center"/>
+                        <Image source={require("./colorpicker.png")} style={styles.colorPickerImage} resizeMode="contain"/>
                     </View>
                 </TouchableOpacity>
             </View> 
