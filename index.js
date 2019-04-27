@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, TextInput, StyleSheet, TouchableOpacity, Dimensions, Modal} from 'react-native';
+import {View, Text, TextInput, StyleSheet, TouchableOpacity, Dimensions, Modal, Image} from 'react-native';
 import {TriangleColorPicker, fromHsv} from 'react-native-color-picker';
 
 const styles =  StyleSheet.create({
@@ -83,6 +83,10 @@ const styles =  StyleSheet.create({
         justifyContent: "center",
         zIndex: 5,
         position: "absolute"
+    },
+    colorPickerImage: {
+        width: 30,
+        height: 30
     }
 });
 
@@ -186,7 +190,7 @@ export default class CustomColorPicker extends Component {
                 <TextInput value={this.state.color} style={[styles.textInput, Dimensions.get('window').width < 400 && {width: 130}]} onEndEditing={this.onEndEditing} onChangeText={(t) => this.onUpdate(t)}/>
                 <TouchableOpacity onPress={this.openModal}>
                     <View style={styles.pickerButton}>
-                        <Text style={styles.pickerButtonText}>?</Text>
+                        <Image source={require("./colorpicker.png")} style={styles.colorPickerImage}/>
                     </View>
                 </TouchableOpacity>
             </View> 
