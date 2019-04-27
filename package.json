@@ -1,0 +1,16 @@
+{
+  "name": "react-native-modal-color-picker",
+  "version": "1.0.0",
+  "description": "Color picker that features a text input and triangle color picker that appears in a modal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "= <=> (=)",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-native": "^0.59.5",
+    "react-native-color-picker": "https://github.com/prettygoodstudios/react-native-color-picker.git"
+  }
+}
