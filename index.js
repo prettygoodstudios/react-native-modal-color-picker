@@ -30,7 +30,7 @@ const styles =  StyleSheet.create({
         backgroundColor: "black",
         justifyContent: "center",
         alignContent: "center",
-        flexDirection: "column",
+        flexDirection: "row",
         borderWidth: 2
     },
     pickerButtonText: {
@@ -85,8 +85,9 @@ const styles =  StyleSheet.create({
         position: "absolute"
     },
     colorPickerImage: {
-        width: 50,
-        height: 50
+        width: 30,
+        height: 30,
+        paddingTop: 10
     }
 });
 
